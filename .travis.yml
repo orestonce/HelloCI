@@ -2,8 +2,11 @@ language: go
 go:
 - "1.9.4"
 - "master"
-os: linux
+os: 
+- linux
+- windows
+- osx
 script:
-- GO111MODULE=off go test
+- go test
 git:
   depth: 1

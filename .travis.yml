@@ -1,9 +1,8 @@
 language: go
 go:
 - "1.9.4"
+- GO111MODULE="off"
 os: linux
-before_build:
-- echo "Hello CI"
 script:
 - go test
 git:

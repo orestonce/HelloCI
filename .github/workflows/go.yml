@@ -10,7 +10,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: windows
+    runs-on: Windows2019-Azure
     steps:
 
     - name: Set up Go 1.14.4

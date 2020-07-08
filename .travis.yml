@@ -2,6 +2,8 @@ language: go
 go:
 - "1.9.4"
 os: linux
+before_build:
+- echo "Hello CI"
 script:
 - go test
 git:

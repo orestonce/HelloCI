@@ -3,8 +3,6 @@ go:
 - "1.9.4"
 os: linux
 script:
-- go test -race -coverprofile=coverage.txt -covermode=atomic
-after_success:
-- bash <(curl -s https://codecov.io/bash)
+- go test
 git:
   depth: 1

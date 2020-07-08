@@ -1,12 +1,8 @@
 language: go
-go:
-- "1.9.4"
-- "master"
 os: 
-- linux
 - windows
-- osx
 script:
-- go test
+- go build
+- go test -v
 git:
   depth: 1

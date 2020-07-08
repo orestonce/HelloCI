@@ -10,7 +10,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: windows7
+    runs-on: windows
     steps:
 
     - name: Set up Go 1.14.4

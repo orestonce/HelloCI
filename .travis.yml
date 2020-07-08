@@ -1,9 +1,9 @@
 language: go
 go:
 - "1.9.4"
-- GO111MODULE=off
+- "master"
 os: linux
 script:
-- go test
+- GO111MODULE=off go test
 git:
   depth: 1

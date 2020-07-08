@@ -1,4 +1,6 @@
 language: go
 go:
 - "1.9.4"
-os: osx
+os: windows
+git:
+  depth: 1

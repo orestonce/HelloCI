@@ -10,7 +10,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: windows7
     steps:
 
     - name: Set up Go 1.14.4
@@ -29,6 +29,8 @@ jobs:
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
         fi
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v2
 
     - name: Build
       run: go build -v .
